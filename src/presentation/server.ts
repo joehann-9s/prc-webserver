@@ -20,8 +20,9 @@ export class Server {
         this.routes = routes;
     }
     async start(){
-
+ 
         //* Middlewares
+        this.app.use(express.json()); 
 
 
         //* Public Folder
