@@ -34,7 +34,7 @@ export class Server {
 
         // * SPA
         this.app.get('*', (req, res) => {
-            const indexPath = path.join( __dirname, `../../../${this.publicPath}/index.html`);
+            const indexPath = path.join( __dirname + `../../../${this.publicPath}/index.html`);
             res.sendFile(indexPath);
             return;
         })
